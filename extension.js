@@ -62,7 +62,7 @@ function showBreakImage() {
 }
 
 function getWebviewContent(panel) {
-    const imagePath = vscode.Uri.file(path.join('C:', 'Work', 'ИТМО', 'ИСРПО', 'lab 3', 'plugin-isrpo', 'scale_1200.jpeg'));
+    const imagePath = vscode.Uri.file(path.join('C:', 'Work', 'ИТМО', 'ИСРПО', 'lab 3_1', 'plug-in', 'scale_1200.jpeg'));
     const imageSrc = panel.webview.asWebviewUri(imagePath);
 
     return `
