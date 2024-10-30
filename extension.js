@@ -74,7 +74,7 @@ function getWebviewContent(panel) {
             <title>Break Time</title>
         </head>
         <body>
-            <img src="${imageSrc}" width="300" height="200" alt="Take a Break">
+            <img src="${imageSrc}" width="600" height="500" alt="Take a Break">
         </body>
         </html>
     `;
