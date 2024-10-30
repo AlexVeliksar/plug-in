@@ -1,65 +1,29 @@
-# plugin-isrpo README
+### **Великсар Александр Денисович M3119**
 
-This is the README for your extension "plugin-isrpo". After writing up a brief description, we recommend including the following sections.
+# Лабораторная работа №3 на тему: "Написание плагина для Visual Studio Code"
 
-## Features
+## Основные функции и поведение плагина:
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Инициализация плагина:
 
-For example if there is an image subfolder under your extension project workspace:
+- Плагин активируется командой extension.startTimer, которая регистрируется при инициализации.
 
-\!\[feature X\]\(images/feature-x.png\)
+### Запуск таймера:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Когда пользователь вводит команду extension.startTimer, появляется окно ввода, где пользователь может указать длительность таймера в минутах.
 
-## Requirements
+- Ввод проверяется на корректность, и если значение некорректное (не число), выводится сообщение об ошибке.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Работа таймера:
 
-## Extension Settings
+- Таймер устанавливается на указанное количество минут и отображается в строке состояния.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- В строке состояния отображается оставшееся время в формате минуты:секунды.
 
-For example:
+### Окончание таймера:
 
-This extension contributes the following settings:
+- Когда таймер заканчивается, отображается сообщение Time is up!.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- Открывается веб-панель (WebView), которая отображает изображение из папки плагина.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## Ссылка на репозиторий со всем файлами https://github.com/AlexVeliksar/plug-in.git
