@@ -62,7 +62,7 @@ function showBreakImage() {
 }
 
 function getWebviewContent(panel) {
-    const imagePath = vscode.Uri.file(path.join('C:', 'Work', 'ИТМО', 'ИСРПО', 'lab 3_1', 'plug-in', 'scale_1200.jpeg'));
+    const imagePath = vscode.Uri.file(path.join(__dirname, 'scale_1200.jpeg'));
     const imageSrc = panel.webview.asWebviewUri(imagePath);
 
     return `
@@ -74,6 +74,7 @@ function getWebviewContent(panel) {
             <title>Break Time</title>
         </head>
         <body>
+            <h1>Time to take a break!</h1>
             <img src="${imageSrc}" width="600" height="500" alt="Take a Break">
         </body>
         </html>
@@ -92,4 +93,4 @@ function deactivate() {
 module.exports = {
     activate,
     deactivate
-}
+};
